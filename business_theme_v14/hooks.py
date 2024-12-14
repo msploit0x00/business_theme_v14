@@ -1,16 +1,19 @@
+from . import __version__ as app_version
+
 app_name = "business_theme_v14"
 app_title = "Business Theme V14"
-app_publisher = "ds"
-app_description = "ds"
-app_email = "ds@ds.com"
-app_license = "mit"
-# required_apps = []
+app_publisher = "Midocean Technologies Pvt Ltd"
+app_description = "Business Theme for ERPNext / Frappe"
+app_icon = "octicon octicon-file-directory"
+app_color = "grey"
+app_email = "sagar@midocean.tech"
+app_license = "MIT"
 
 # Includes in <head>
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/business_theme_v14/css/business_theme_v14.css"
+app_include_css = "/assets/business_theme_v14/css/business_theme_v14.css"
 # app_include_js = "/assets/business_theme_v14/js/business_theme_v14.js"
 
 # include js, css files in header of web template
@@ -33,11 +36,6 @@ app_license = "mit"
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
-# Svg Icons
-# ------------------
-# include app icons in desk
-# app_include_icons = "business_theme_v14/public/icons.svg"
-
 # Home Pages
 # ----------
 
@@ -46,7 +44,7 @@ app_license = "mit"
 
 # website user home page (by Role)
 # role_home_page = {
-# 	"Role": "home_page"
+#	"Role": "home_page"
 # }
 
 # Generators
@@ -75,22 +73,6 @@ app_license = "mit"
 
 # before_uninstall = "business_theme_v14.uninstall.before_uninstall"
 # after_uninstall = "business_theme_v14.uninstall.after_uninstall"
-
-# Integration Setup
-# ------------------
-# To set up dependencies/integrations with other apps
-# Name of the app being installed is passed as an argument
-
-# before_app_install = "business_theme_v14.utils.before_app_install"
-# after_app_install = "business_theme_v14.utils.after_app_install"
-
-# Integration Cleanup
-# -------------------
-# To clean up dependencies/integrations with other apps
-# Name of the app being uninstalled is passed as an argument
-
-# before_app_uninstall = "business_theme_v14.utils.before_app_uninstall"
-# after_app_uninstall = "business_theme_v14.utils.after_app_uninstall"
 
 # Desk Notifications
 # ------------------
@@ -127,7 +109,7 @@ app_license = "mit"
 # 		"on_update": "method",
 # 		"on_cancel": "method",
 # 		"on_trash": "method"
-# 	}
+#	}
 # }
 
 # Scheduled Tasks
@@ -174,20 +156,6 @@ app_license = "mit"
 #
 # auto_cancel_exempted_doctypes = ["Auto Repeat"]
 
-# Ignore links to specified DocTypes when deleting documents
-# -----------------------------------------------------------
-
-# ignore_links_on_delete = ["Communication", "ToDo"]
-
-# Request Events
-# ----------------
-# before_request = ["business_theme_v14.utils.before_request"]
-# after_request = ["business_theme_v14.utils.after_request"]
-
-# Job Events
-# ----------
-# before_job = ["business_theme_v14.utils.before_job"]
-# after_job = ["business_theme_v14.utils.after_job"]
 
 # User Data Protection
 # --------------------
@@ -220,10 +188,10 @@ app_license = "mit"
 # 	"business_theme_v14.auth.validate"
 # ]
 
-# Automatically update python controller files with type annotations for this app.
-# export_python_type_annotations = True
+# Translation
+# --------------------------------
 
-# default_log_clearing_doctypes = {
-# 	"Logging DocType Name": 30  # days to retain logs
-# }
-
+# Make link fields search translated document names for these DocTypes
+# Recommended only for DocTypes which have limited documents with untranslated names
+# For example: Role, Gender, etc.
+# translated_search_doctypes = []

@@ -3,5 +3,4 @@
 *.egg-info
 *.swp
 tags
-node_modules
-__pycache__
+business_theme_v14/docs/current
